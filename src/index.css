@@ -4,89 +4,99 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%; /* Off-white */
+    --foreground: 222.2 84% 4.9%; /* Dark blue/charcoal */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222.2 84% 4.9%; /* Dark blue/charcoal */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222.2 84% 4.9%; /* Dark blue/charcoal */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 30 100% 45%; /* Darker Orange */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96.1%; /* Light gray */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark blue/charcoal */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%; /* Light gray */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Mid-gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 145 63% 42%; /* Green */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark blue/charcoal for text on accent */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 210 40% 98%; /* Light gray/white */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%; /* Light gray */
+    --input: 214.3 31.8% 91.4%; /* Light gray */
+    --ring: 145 63% 42%; /* Green (accent color) */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Softer corners (12px) */
 
-    --sidebar-background: 0 0% 98%;
+    /* Fonts */
+    --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-heading: "Poppins", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Colors - Light Theme */
+    --sidebar-background: 0 0% 97%; /* Slightly off-white, distinct from main background */
+    --sidebar-foreground: 222.2 84% 4.9%; /* Main foreground */
+    --sidebar-primary: 30 100% 45%; /* Main primary */
+    --sidebar-primary-foreground: 0 0% 100%; /* Main primary foreground */
+    --sidebar-accent: 145 63% 42%; /* Main accent */
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%; /* Main accent foreground */
+    --sidebar-border: 210 20% 88%; /* Slightly darker border for sidebar */
+    --sidebar-ring: 145 63% 42%; /* Main ring (accent) */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 222.2 84% 4.9%; /* Very dark blue/charcoal */
+    --foreground: 210 40% 98%; /* Light gray/white */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 30% 10%; /* Slightly lighter dark */
+    --card-foreground: 210 40% 98%; /* Light gray/white */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 30% 10%; /* Slightly lighter dark */
+    --popover-foreground: 210 40% 98%; /* Light gray/white */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 30 100% 75%; /* Lighter Orange */
+    --primary-foreground: 30 100% 20%; /* Dark Orange */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%; /* Dark gray */
+    --secondary-foreground: 210 40% 98%; /* Light gray/white */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217.2 32.6% 17.5%; /* Dark gray */
+    --muted-foreground: 215 20.2% 65.1%; /* Mid-light gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 145 50% 55%; /* Lighter Green */
+    --accent-foreground: 145 100% 10%; /* Very dark green */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%; /* Dark Red */
+    --destructive-foreground: 210 40% 98%; /* Light gray/white */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217.2 32.6% 17.5%; /* Dark gray */
+    --input: 217.2 32.6% 17.5%; /* Dark gray */
+    --ring: 145 50% 55%; /* Lighter Green (dark accent) */
+
+    /* Sidebar Colors - Dark Theme */
+    --sidebar-background: 220 30% 8%; /* Slightly darker than dark card background */
+    --sidebar-foreground: 210 40% 98%; /* Main dark foreground */
+    --sidebar-primary: 30 100% 75%; /* Main dark primary */
+    --sidebar-primary-foreground: 30 100% 20%; /* Main dark primary foreground */
+    --sidebar-accent: 145 50% 55%; /* Main dark accent */
+    --sidebar-accent-foreground: 145 100% 10%; /* Main dark accent foreground */
+    --sidebar-border: 220 20% 20%; /* Slightly lighter border for dark sidebar */
+    --sidebar-ring: 145 50% 55%; /* Main dark ring (accent) */
+  }
+}
+
+@layer utilities {
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
   }
 }
 
@@ -96,6 +106,10 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body; /* Apply body font by default */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading; /* Apply heading font to heading elements */
   }
 }
